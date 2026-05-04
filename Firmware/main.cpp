@@ -9,11 +9,15 @@
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
+//===========Display Config============
+#define PRESENCE_PIN 4  //LD2410 pin
+
 //===========System Vaiables===========
 bool sessionActive = false;
 int focusSCORE = 100;
 String state = "Ready";
 String message = "Press button to start";
+String emoji = "(._.)";
 
 //===========Sensor Variables===========
 int noiseLevel = 0;
@@ -32,6 +36,10 @@ unsigned long lastDisplayUpdate = 0;
 unsigned long lastFocusStableTime = 0;
 unsigned long lastdistractedStartTime = 0;
 
+//===========Message System===========
+bool showFullMessage = false;
+unsigned long messageStartTime = 0;
+String lastState = "IDLE";
 
 //===========Function Declarations===========
 void updateInputs();
@@ -44,15 +52,17 @@ void readSensors();
 //===========Setup============
 void setup() {
   Serial.begin(1150200);
-  pinMode(0, INPUT_PULLUP); //Button (GPIO 0)
+  
+  pinMode(0, INPUT_PULLUP);   //Button
+  pinMode(PRESENCE_PIN, INPUT); //LD2410
 
   Wire.begin();
 
-  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-    Serial.println("OLED Failed");
-    while (true); //stops if display fails
+  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    Serial.println("OLED Failed!");
+    while (true);
   }
-
+  
   display.clearDisplay();
   display.display();
 }
@@ -83,12 +93,20 @@ void updateInputs() {
   lastButtonState = buttonState;
 }
 
-//===========Sensor Simulation===========
+//===========Sensor Read (LD2410)===========
 void readSensors() {
-  //Simulated values (replace later with real sensors)
-  noiseLevel = random(0, 100);
-  motionLevel = random(0, 100);
-}
+
+  //Simulated noise (replace with mic)
+  noiseLevel = random(0,100);
+
+  int presence = digitalRead(PRESENCE_PIN);
+
+  if (presence == HIGH) {
+    motionLevel = 20; //calm presence only
+   } else {
+      motionLevel = 80; //no one is there 
+    }
+  }
 
 //============Focus Engine===========
 void updateFocus() {
@@ -144,60 +162,96 @@ void updateState() {
   }
 }
 
-//============Personality Engine============
+//============Personality Engine===========
 void updatePersonality() {
+
+  //Trigger full message on state change
+  if (state != lastState) {
+    showFullMessage = true;
+    messageStartTime = 0;
+    lastState = state;
+  }
+
+  if (!sessionActive) {
+    emoji = "(._.)";
+    message = "EYES needs your focus.";
+    lastdistractedStartTime = 0;
+    return;
+  }
+
   if (state == "FOCUSED") {
-    message = "Locked In";
+    emoji = "(^_^)";
+    message = "Locked In!";
+
   } else if (state == "DRIFTING") {
-    message = "Careful...";
+    emoji = "(-_-)";
+    message = "Stay With Me Now....";
+
   } else if (state == "DISTRACTED") {
-    if (lastdistractedStartTime == 0) {
+    emoji = "(T_T)";
+    
+    if (lastdistractedStartTime ==0) {
       lastdistractedStartTime = currentTime;
     }
 
     if (currentTime - lastdistractedStartTime > 30000) {
-      message = "Get it together!";
+      message = "EYES is losing you!";
     } else {
-      message = "Focus up!";
+      message = "Focus Up Bro!";
     }
-
-  } else {
-    message = "Press button to start";
-    lastdistractedStartTime = 0;
   }
+
 }
+
 
 //============Display============
 void updateDisplay() {
-  if (currentTime - lastDisplayUpdate > 1000) {
+  
+  if (currentTime - lastDisplayUpdate > 200) {
 
     lastDisplayUpdate = currentTime;
 
     display.clearDisplay();
-
-    display.setTextSize(1);
     display.setTextColor(SSD1306_WHITE);
 
-    // State
-    display.setCursor(0, 0);
-    display.print("State: ");
-    display.print(state);
+    //====FULL MESSAGE MODE====
+    if (showFullMessage && (currentTime - messageStartTime <5000)) {
+
+      display.setTextSize(2);
+      display.setCursor(0, 20);
+      display.print(message);
+      display.setCursor(85,10);
+      display.print(emoji);
+    } else {
+      showFullMessage = false;
+
+      display.setTextSize(1);
+
+      display.setCursor(0,0);
+      display.print(state);
 
     //Focus Score
     display.setCursor(0, 10);
-    display.print("Focus: ");
+    display.print("F: ");
     display.print(focusSCORE);
 
     //Time
     display.setCursor(0, 20);
-    display.print("Time: ");
+    display.print("T: ");
     display.print((currentTime - startTime) / 1000);
 
     //Message
-    display.setCursor(0, 30);
+    display.setCursor(0, 35);
     display.print(message);
+    }
 
-    //Focus Bar
+    // Emoji
+    display.setTextSize(2);
+    display.setCursor(85, 10);
+    display.print(emoji);
+
+    display.setTextSize(1);
+
     int barWidth = map(focusSCORE, 0, 100, 0, 120);
 
     display.drawRect(0, 55, 120, 8, SSD1306_WHITE);
