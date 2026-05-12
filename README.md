@@ -4,6 +4,7 @@ It is a device that helps you focus while studying, working etc. The main purpos
 
 # Overview
 Fitted with the **Esp32 Dev Board**, **ATTN_unit** uses **KY038** and **HLK-LD2410** sensors to read the noise levels and movment of the user and gives out the **Focus Score** of the user and also displays corresponding emotions the **OLED display**. 
+
 <img width="520" height="317" alt="hero_shot" src="https://github.com/user-attachments/assets/b29451ed-53b7-4a62-97ad-0336ba9b79fc" />
 
 # How it works
