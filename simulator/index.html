@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Bulb Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pixel Bulb Simulator</h1>
+
+        <div id="bulb-container" class="bulb-standard off">
+            <div class="bulb-pixel-art"></div>
+        </div>
+
+        <div class="controls">
+            <div class="power-control">
+                <button id="toggle-btn">Power: OFF</button>
+            </div>
+            <div class="type-selection">
+                <button class="type-btn active" data-type="standard">Standard</button>
+                <button class="type-btn" data-type="edison">Edison</button>
+                <button class="type-btn" data-type="globe">Globe</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

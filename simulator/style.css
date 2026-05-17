@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --off-color: #444;
+    --on-color: #ffeb3b;
+    --glow-color: rgba(255, 235, 59, 0.4);
+    --base-color: #888;
+    --base-dark: #666;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#bulb-container {
+    width: 100px;
+    height: 150px;
+    margin: 0 auto 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.bulb-pixel-art {
+    width: 10px;
+    height: 10px;
+}
+
+/* Standard Bulb */
+.bulb-standard .bulb-pixel-art {
+    box-shadow:
+        20px 0 var(--off-color), 30px 0 var(--off-color), 40px 0 var(--off-color), 50px 0 var(--off-color),
+        10px 10px var(--off-color), 60px 10px var(--off-color),
+        0px 20px var(--off-color), 70px 20px var(--off-color),
+        0px 30px var(--off-color), 70px 30px var(--off-color),
+        0px 40px var(--off-color), 70px 40px var(--off-color),
+        10px 50px var(--off-color), 60px 50px var(--off-color),
+        20px 60px var(--off-color), 50px 60px var(--off-color),
+        20px 70px var(--base-color), 30px 70px var(--base-color), 40px 70px var(--base-color), 50px 70px var(--base-color),
+        20px 80px var(--base-dark), 30px 80px var(--base-dark), 40px 80px var(--base-dark), 50px 80px var(--base-dark),
+        30px 90px #444, 40px 90px #444;
+}
+
+.bulb-standard.on .bulb-pixel-art {
+    box-shadow:
+        20px 0 var(--on-color), 30px 0 var(--on-color), 40px 0 var(--on-color), 50px 0 var(--on-color),
+        10px 10px var(--on-color), 60px 10px var(--on-color),
+        0px 20px var(--on-color), 70px 20px var(--on-color),
+        0px 30px var(--on-color), 70px 30px var(--on-color),
+        0px 40px var(--on-color), 70px 40px var(--on-color),
+        10px 50px var(--on-color), 60px 50px var(--on-color),
+        20px 60px var(--on-color), 50px 60px var(--on-color),
+        /* Fill */
+        20px 10px var(--on-color), 30px 10px var(--on-color), 40px 10px var(--on-color), 50px 10px var(--on-color),
+        10px 20px var(--on-color), 20px 20px var(--on-color), 30px 20px var(--on-color), 40px 20px var(--on-color), 50px 20px var(--on-color), 60px 20px var(--on-color),
+        10px 30px var(--on-color), 20px 30px var(--on-color), 30px 30px var(--on-color), 40px 30px var(--on-color), 50px 30px var(--on-color), 60px 30px var(--on-color),
+        10px 40px var(--on-color), 20px 40px var(--on-color), 30px 40px var(--on-color), 40px 40px var(--on-color), 50px 40px var(--on-color), 60px 40px var(--on-color),
+        20px 50px var(--on-color), 30px 50px var(--on-color), 40px 50px var(--on-color), 50px 50px var(--on-color),
+        30px 60px var(--on-color), 40px 60px var(--on-color),
+        /* Base */
+        20px 70px var(--base-color), 30px 70px var(--base-color), 40px 70px var(--base-color), 50px 70px var(--base-color),
+        20px 80px var(--base-dark), 30px 80px var(--base-dark), 40px 80px var(--base-dark), 50px 80px var(--base-dark),
+        30px 90px #444, 40px 90px #444;
+    filter: drop-shadow(0 0 15px var(--glow-color));
+}
+
+/* Edison Bulb */
+.bulb-edison .bulb-pixel-art {
+    box-shadow:
+        20px 0 var(--off-color), 30px 0 var(--off-color), 40px 0 var(--off-color), 50px 0 var(--off-color),
+        10px 10px var(--off-color), 60px 10px var(--off-color),
+        10px 20px var(--off-color), 60px 20px var(--off-color),
+        10px 30px var(--off-color), 60px 30px var(--off-color),
+        10px 40px var(--off-color), 60px 40px var(--off-color),
+        10px 50px var(--off-color), 60px 50px var(--off-color),
+        20px 60px var(--off-color), 50px 60px var(--off-color),
+        /* Base */
+        20px 70px var(--base-color), 30px 70px var(--base-color), 40px 70px var(--base-color), 50px 70px var(--base-color),
+        20px 80px var(--base-dark), 30px 80px var(--base-dark), 40px 80px var(--base-dark), 50px 80px var(--base-dark),
+        30px 90px #444, 40px 90px #444;
+}
+
+.bulb-edison.on .bulb-pixel-art {
+    box-shadow:
+        20px 0 #ffa726, 30px 0 #ffa726, 40px 0 #ffa726, 50px 0 #ffa726,
+        10px 10px #ffa726, 60px 10px #ffa726,
+        10px 20px #ffa726, 60px 20px #ffa726,
+        10px 30px #ffa726, 60px 30px #ffa726,
+        10px 40px #ffa726, 60px 40px #ffa726,
+        10px 50px #ffa726, 60px 50px #ffa726,
+        20px 60px #ffa726, 50px 60px #ffa726,
+        /* Filament */
+        30px 20px #ff5722, 40px 20px #ff5722,
+        30px 30px #ff5722, 40px 30px #ff5722,
+        30px 40px #ff5722, 40px 40px #ff5722,
+        30px 50px #ff5722, 40px 50px #ff5722,
+        /* Base */
+        20px 70px var(--base-color), 30px 70px var(--base-color), 40px 70px var(--base-color), 50px 70px var(--base-color),
+        20px 80px var(--base-dark), 30px 80px var(--base-dark), 40px 80px var(--base-dark), 50px 80px var(--base-dark),
+        30px 90px #444, 40px 90px #444;
+    filter: drop-shadow(0 0 15px rgba(255, 167, 38, 0.5));
+}
+
+/* Globe Bulb */
+.bulb-globe .bulb-pixel-art {
+    box-shadow:
+        /* Shifted down to avoid cut off */
+        20px 10px var(--off-color), 30px 10px var(--off-color), 40px 10px var(--off-color), 50px 10px var(--off-color), 60px 10px var(--off-color),
+        10px 20px var(--off-color), 70px 20px var(--off-color),
+        0px 30px var(--off-color), 80px 30px var(--off-color),
+        0px 40px var(--off-color), 80px 40px var(--off-color),
+        0px 50px var(--off-color), 80px 50px var(--off-color),
+        10px 60px var(--off-color), 70px 60px var(--off-color),
+        20px 70px var(--off-color), 60px 70px var(--off-color),
+        /* Base */
+        30px 80px var(--base-color), 40px 80px var(--base-color), 50px 80px var(--base-color),
+        35px 90px var(--base-dark), 45px 90px var(--base-dark);
+}
+
+.bulb-globe.on .bulb-pixel-art {
+    box-shadow:
+        20px 10px #e1f5fe, 30px 10px #e1f5fe, 40px 10px #e1f5fe, 50px 10px #e1f5fe, 60px 10px #e1f5fe,
+        10px 20px #e1f5fe, 70px 20px #e1f5fe,
+        0px 30px #e1f5fe, 80px 30px #e1f5fe,
+        0px 40px #e1f5fe, 80px 40px #e1f5fe,
+        0px 50px #e1f5fe, 80px 50px #e1f5fe,
+        10px 60px #e1f5fe, 70px 60px #e1f5fe,
+        20px 70px #e1f5fe, 60px 70px #e1f5fe,
+        /* Fill */
+        20px 20px #e1f5fe, 30px 20px #e1f5fe, 40px 20px #e1f5fe, 50px 20px #e1f5fe, 60px 20px #e1f5fe,
+        10px 30px #e1f5fe, 20px 30px #e1f5fe, 30px 30px #e1f5fe, 40px 30px #e1f5fe, 50px 30px #e1f5fe, 60px 30px #e1f5fe, 70px 30px #e1f5fe,
+        10px 40px #e1f5fe, 20px 40px #e1f5fe, 30px 40px #e1f5fe, 40px 40px #e1f5fe, 50px 40px #e1f5fe, 60px 40px #e1f5fe, 70px 40px #e1f5fe,
+        10px 50px #e1f5fe, 20px 50px #e1f5fe, 30px 50px #e1f5fe, 40px 50px #e1f5fe, 50px 50px #e1f5fe, 60px 50px #e1f5fe, 70px 50px #e1f5fe,
+        20px 60px #e1f5fe, 30px 60px #e1f5fe, 40px 60px #e1f5fe, 50px 60px #e1f5fe, 60px 60px #e1f5fe,
+        /* Base */
+        30px 80px var(--base-color), 40px 80px var(--base-color), 50px 80px var(--base-color),
+        35px 90px var(--base-dark), 45px 90px var(--base-dark);
+    filter: drop-shadow(0 0 20px rgba(225, 245, 254, 0.6));
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: 4px solid #555;
+    padding: 12px 24px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #444;
+    border-color: #777;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.active {
+    background-color: #555;
+    border-color: #fff;
+}
+
+.type-selection {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+#toggle-btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
