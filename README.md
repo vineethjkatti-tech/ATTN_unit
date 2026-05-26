@@ -27,6 +27,20 @@ The code contains a lot of **variables** and custom **functions**. It has a **Sc
 
 <img width="340" height="280" alt="pcb" src="https://github.com/user-attachments/assets/a6cb59ec-8942-404e-98d0-a8a51e8ef865" />
 
+### Structure
+When we come to the hardware side, ATTN_unit contains two parts:
+1. **Part A:** The Front Panel with the screen bezel and the screen itself.
+2. **Part B:** The main container that holds the PCB and to which the Part A is snapped onto
+
+### Connection Methods
+There are two types of connection methods used in this project
+1. **Snap-in Locks-**
+  - It is used to fit Part A and B together.
+  - It is used to fit the display onto its bezel.
+
+2. **M3 Heat Inserts-**
+  - They are used to connect the PCB with Part B.
+
 
 # Steps to Build ATTN_unit
 **All the required materials to make the project can be found in the BOM file!!**
