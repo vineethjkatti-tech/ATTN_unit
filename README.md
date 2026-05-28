@@ -7,6 +7,11 @@ Fitted with the **Esp32 Dev Board**, **ATTN_unit** uses **I2S MEMS Breakout Boar
 
 <img width="1920" height="832" alt="ATTN_unit (revised)" src="https://github.com/user-attachments/assets/72a3dec0-157c-4f44-84e3-f15502b3c370" />
 
+## Zine Page
+<img width="211" height="322" alt="ATTN_unit-zine" src="https://github.com/user-attachments/assets/d09cb26c-d9c1-4aab-8b56-ea552e2010f4" />
+
+_Check out my zine_page [here!!](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/ATTN_unit-zine.pdf)
+
 
 # How it works
 This project has four key elements:
