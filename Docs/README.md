@@ -29,7 +29,7 @@ This project has four key elements:
 >This the highlight of my project. There is one core factor - **consistency score** which is affected by many factors such as your **focus**, the **noise level** in your environment, your **movment** - how much you fidget around and its **state **_(which is affected by noise level, focus and motion)._
 
 ## Firmware Logic
-The code contains a lot of **variables** and custom **functions**. It has a **Scoring System** and also contains **Memory**. The UI is good and it contains a character called **EYES** who always keeps watch on you and craves for your **attention**.
+The firmware contains a series of **variables** and custom **functions**. It uses a **Scoring System** as you know. The UI is good and it contains a character called **EYES** who always keeps watch on you and craves for your **attention**.
 
 <img width="800" height="448" alt="hero_shot" src="https://github.com/user-attachments/assets/11ec5889-8c2a-47e0-abaf-7221a2a96796" />
 
