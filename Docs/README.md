@@ -68,10 +68,19 @@ The JST on the display accomodates **8-sockets** as you may know. I have provide
 
 6. Last step is to connect the ESP32 to a USB Port for Power Supply and your done!!
 
+_Refer the Gallery If you don't understand anything_
+
 **_If you followed all the steps, then congrats!! Your ATTN_unit is ready. Enjoy your fulfilling and focus-filled study sessions!!_**
 
 # Why this Project?
 In a world with thousands of distractions around us, it is hard for students to focus and concentrate on studying. These study sessions are often plain and lack something **fun**. This lack of _fun_ is satisfied by our **ATTN_unit**. It makes studying feel like a game by introducing **Focus Score** and others such elements that **encourage** students to study.
 
+# Gallery
+
+**Pinout Schematic:**
+<img width="3508" height="2480" alt="image" src="https://github.com/user-attachments/assets/d1683796-7e5c-473e-8bd0-194e3717b94a" />
+
+**Display to Board Connection:**
+<img width="1280" height="720" alt="ATTN_unit (revised)" src="https://github.com/user-attachments/assets/6f691a1f-06a3-4669-99d4-20506fcd566a" />
 
 
