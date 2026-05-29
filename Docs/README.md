@@ -56,7 +56,7 @@ The JST on the display accomodates **8-sockets** as you may know. I have provide
 # Steps to Build ATTN_unit
 **All the required materials to make the project can be found in the BOM file!!**
 
-1. Start by printing all the requires plastic material. (All CAD files can be found [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/CAD))
+1. Start by printing all the required plastic material. (All CAD files can be found [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/CAD))
 
 2. Next, mount the PCB (it doesnt matter if you solder one, you can find all the schematics [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/KICAD)) to the standoffs in **Part B** using **M3 Inserts and Screws**.
 
