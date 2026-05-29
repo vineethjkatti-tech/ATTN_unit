@@ -5,7 +5,13 @@ It is a device that helps you focus while studying, working etc. The main purpos
 # Overview
 Fitted with the **Esp32 Dev Board**, **ATTN_unit** uses **I2S MEMS Breakout Board** and **HLK-LD2410** sensors to read the noise levels and movment of the user and gives out the **Focus Score** of the user and also displays corresponding emotions the **2.13 Inch E-Ink Display**. It includes a **2 pin tactile switch** to start or stop a study session.
 
-<img width="520" height="317" alt="hero_shot" src="https://github.com/user-attachments/assets/b29451ed-53b7-4a62-97ad-0336ba9b79fc" />
+<img width="1920" height="832" alt="ATTN_unit (revised)" src="https://github.com/user-attachments/assets/72a3dec0-157c-4f44-84e3-f15502b3c370" />
+
+## Zine Page
+<img width="421" height="643" alt="ATTN_unit-zine (2)" src="https://github.com/user-attachments/assets/3726ded5-dd08-4c62-8b0e-cf96a01cff12" />
+
+_Check out my zine_page [here!!](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/ATTN_unit-zine.pdf)
+
 
 # How it works
 This project has four key elements:
@@ -25,14 +31,15 @@ This project has four key elements:
 ## Firmware Logic
 The code contains a lot of **variables** and custom **functions**. It has a **Scoring System** and also contains **Memory**. The UI is good and it contains a character called **EYES** who always keeps watch on you and craves for your **attention**.
 
-<img width="340" height="280" alt="pcb" src="https://github.com/user-attachments/assets/a6cb59ec-8942-404e-98d0-a8a51e8ef865" />
+<img width="800" height="448" alt="hero_shot" src="https://github.com/user-attachments/assets/11ec5889-8c2a-47e0-abaf-7221a2a96796" />
+
 
 ### Structure
 When we come to the hardware side, ATTN_unit contains two parts:
 1. **Part A:** The Front Panel with the screen bezel and the screen itself.
 2. **Part B:** The main container that holds the PCB and to which the Part A is snapped onto
 
-### Connection Methods
+**Connection Methods:**
 There are two types of connection methods used in this project
 1. **Snap-in Locks-**
   - It is used to fit Part A and B together.
@@ -41,16 +48,27 @@ There are two types of connection methods used in this project
 2. **M3 Heat Inserts-**
   - They are used to connect the PCB with Part B.
 
+**Display:**
+As the **2.13 Inch 2 color E-Ink display** is native to one of the raspberry pi, I have to keep in mind some things while connecting it to ESP32.
+The JST on the display accomodates **8-sockets** as you may know. I have provided an **8-pin header** on my PCB which has the same pin designations as the JST on the the display. The JST can be connected to the header using jumper wires. 
+
 
 # Steps to Build ATTN_unit
 **All the required materials to make the project can be found in the BOM file!!**
 
-1. Start by mounting the **PCB** ( You can find the design files for it [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/KICAD) ) to Part A using  4 **M3 Screws** and **M3 Inserts**. You need **Heat Insert** equipment to do this.
-2. Mount the **Glass Pane** to Part A using 4 **M2 Screws** and **M2 Inserts**.
-3. Next mount the stand to Part A using 4 **M2 Screws** and **M2 Inserts**.
-4. Connect the **USB Port** to a switchboard and then you are done!!.
+1. Start by printing all the requires plastic material. (All CAD files can be found [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/CAD))
 
-**All CAD files can be found [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/CAD)**
+2. Next, mount the PCB (it doesnt matter if you solder one, you can find all the schematics [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/KICAD)) to the standoffs in **Part B** using **M3 Inserts and Screws**.
+
+3. After that put the display into Part A by just pressing it in ( the Part has snap-in locks in the bezel space ).
+
+4. Then screw an **8mm momentary switch** through the hole in the **right side** of **Part B**. Solder the two pins to their resepctive pins on ESP32 (One to **GND** and another one to any **GPIO pin**)
+
+5. After this connect the **Front Panel** and **Part B** by pressing them into each other cause they have **snap-in locks**.
+
+6. Last step is to connect the ESP32 to a USB Port for Power Supply and your done!!
+
+**_If you followed all the steps, then congrats!! Your ATTN_unit is ready. Enjoy your fulfilling and focus-filled study sessions!!_**
 
 # Why this Project?
 In a world with thousands of distractions around us, it is hard for students to focus and concentrate on studying. These study sessions are often plain and lack something **fun**. This lack of _fun_ is satisfied by our **ATTN_unit**. It makes studying feel like a game by introducing **Focus Score** and others such elements that **encourage** students to study.
