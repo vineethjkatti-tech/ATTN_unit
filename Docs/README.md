@@ -60,7 +60,7 @@ The JST on the display accomodates **8-sockets** as you may know. I have provide
 
 2. Next, mount the PCB (it doesnt matter if you solder one, you can find all the schematics [here](https://github.com/vineethjkatti-tech/ATTN_unit/tree/main/KICAD)) to the standoffs in **Part B** using **M3 Inserts and Screws**.
 
-3. After that put the display into Part A by just pressing it in ( the Part has snap-in locks in the bezel space ).
+3. After that put the display into Part A by just pressing it in ( the Part has snap-in locks in the bezel space ). Connect the JST (8-pin) of the Display to the 8-pin header on the PCB using **Jumper Wires**.
 
 4. Then screw an **8mm momentary switch** through the hole in the **right side** of **Part B**. Solder the two pins to their resepctive pins on ESP32 (One to **GND** and another one to any **GPIO pin**)
 
