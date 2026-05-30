@@ -1,12 +1,11 @@
 Name ,Qty,Price ($),Link
-KY038 Sensor,1,1.88,https://www.amazon.in/roboCraze-Robocraze-Sound-Sensor-Module/dp/B07FDF3V1M/ref=pd_sbs_d_sccl_1_2/525-4608940-6140104?pd_rd_w=qa7lQ&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=8PG90NFZ3BT0MMMYQP6D&pd_rd_wg=pP4Xk&pd_rd_r=9a05cc7c-bf4c-4f07-819a-347fb0a01c5f&pd_rd_i=B07FDF3V1M&th=1
-Tactile Switch (2 pin),1,0.1,https://www.amazon.in/Push-Button-Tactile-Micro-Switch/dp/B08P5D5658/ref=sr_1_8?crid=2I4EDZ3AAYPDX&dib=eyJ2IjoiMSJ9.kgPTTJmA2zj96Vu-MogP-_lG8_6wO5GDsI-7IT30_61gWmoNgRxLUc63-DI3NXIeAkolcuOR6VHE2maD7wQbwS6PAhdBXmWQJ_s8huWsIqI_f_dVcCuKxoNH6X5s6JEK90almjx3dQ6FGvpW3899PFb5YRLl_l5hVMAQngZXhBVwQmf4WCZrP-yRIzPA-v1MSa_lNfUAaSiF0DU5CKBnjCNy6TFr6c92sk20hre8PxNi4qwRliUJXhPgB5GaaRA5lB3eGz3n8fIfN7njYSjWB7gegOt7YJGaPhw7V1JA7EM.RxB_CtlsoXkVQBKiOFrnD4YZm1aAICWd45ijj6XPV6k&dib_tag=se&keywords=push+button&qid=1778591772&s=industrial&sprefix=push+bu%2Cindustrial%2C520&sr=1-8
-0.96 inch OLED display,1,2.18,https://robu.in/product/0-96-inch-ssd1306-white-oled-display-module/
+I2S MEMS MIC,1,5.61,https://robu.in/product/dfrobot-fermion-i2s-mems-microphone-breakout/
+8mm Momentary Switch,1,0.3,https://robu.in/product/r16-503bd-plastic-round-momentary-switch-with-led-2pinoff-on/
+2.13 Inch E-ink Display (Two Color),1,19.96,https://robu.in/product/0-96-inch-ssd1306-white-oled-display-module/
 HLK-LD2410C Sensor,1,5.26,https://robu.in/product/hi-link-hlk-ld2410c-p-24ghz-human-presence-radar-sensor/
 ESP32-DEVKITC-32E,1,3.54,https://robu.in/product/esp-wroom-32-esp32-wifi-bt-ble-mcu-module/
-M2 Inserts,8,0.4,https://robu.in/product/m2-x-4-mm-brass-insert/
-M2 Screws,8,0.7,https://robu.in/product/m2-x-8mm-socket-button-head-cap-allen-ss-304-screw-dia-2mm-length-8mm-10-pcs/
 M3 Inserts,4,0.24,https://www.amazon.in/Insert-Threaded-Printing-Woodworking-Projects/dp/B0DZFR748C/ref=sr_1_5?crid=1RMKLJQXZR60V&dib=eyJ2IjoiMSJ9.D5qBJBPPp0h2il_YUjY3nwxaP3_d4dJEa0nvqGJ_njqwIwCr9AMzSskwswEmcOmYOQLHVC-wzD0BJwSDDFkYAQyl70jPCXNYKXhFskiH6XvwKgjsH0R5KaxsL2tB9kIoLMDLp1cH8NAE8XHCzXm0NdOm_2ht4qLpKMtz8oFMdqRR6z4TDm-orib6RZmWTaQChcBGa3utWvZkKJXw33-LS8060e2ijox2_c2n0Zd-i_pZtyZ92J7_zBb8nMpwjRTf5a-rRrGevZBQ_xXsEIClUkaAsDlZxa9HgDOvgRJkrEQ.B9EK5iJuipXWSUMDy3iHy7_7XaKmmpB-_J6kbnUMPAU&dib_tag=se&keywords=m3+inserts&qid=1778592369&s=industrial&sprefix=m3+inse%2Cindustrial%2C542&sr=1-5
 M3 Screws,4,0.212,https://www.amazon.in/Rpi-shop-tensile-Machine-Quantity/dp/B07XY7B4ZF/ref=sr_1_11?crid=2LUX76521AGP&dib=eyJ2IjoiMSJ9.BtaajFvTdbzZOUG1ILKlygorZYV6eTX6iMOcq35GCeFfvGVslrjSYDhxQF4Ewhd6UiMwlbRZNw6EJb9A3Y4ELRG_Q9ig1C_0A77rwoReaKs0mFc59QC4JJw7bjlhyEGwOlU7nghRwIxImrKE-DT1dKztv8wZFd3c_YQL9AlYiaMmZWLvPjXWKmt72LaQrp3ANAkOfd2l4TjofbA__RBeRUBkphaGlGpHOBRbevYArPMdWP0-ukTsRkRSWaNkX3GlVA-3joRh21fxtUc5Ova020Z0s-9d3ainY2iFXzV0h8c.D6Wax97hxOKGy2SqfGIgC9LCMpCyCsqpJ5SFByCqIAU&dib_tag=se&keywords=m3%2Bflat%2Bhead%2Bscrews&qid=1778592512&s=industrial&sprefix=m3%2Bflat%2Bhead%2Bscre%2Cindustrial%2C554&sr=1-11&th=1
-Shipping Costs,-,~10,-
-Grand Total ,,24.512,-
+Part A,78.729 g,1,https://robu.in/product/esun-epla-gloss-1-75mm-3d-printing-filament-1kg/
+Part B,284.194 g,3,https://robu.in/product/pro-range-pla-matte-filament-1-75mm-1-kg-spool-yellow/
+Total,-,39.122,-
