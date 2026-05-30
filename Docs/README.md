@@ -49,8 +49,8 @@ There are two types of connection methods used in this project
   - They are used to connect the PCB with Part B.
 
 **Display:**
-As the **2.13 Inch 2 color E-Ink display** fits easily onto the raspberry pi, I have to keep in mind some things while connecting it to an ESP32.
-The JST on the display accomodates **8-sockets** as you may know. I have provided an **8-pin header** on my PCB which has the same pin designations as the JST on the the display. The JST can be connected to the header using jumper wires. 
+As the **2.13 Inch 2 color E-Ink display** fits easily onto the raspberry pi, you have to keep in mind some things while connecting it to an ESP32.
+The JST on the display accomodates **8-sockets** as you may know. I have provided an **8-pin header** on my PCB which has the same pin designations as the JST on the the display. The JST can be connected to the headers on the PCB using jumper wires. 
 
 **Note: the 3D Model used in the CAD is the 3-color model because I was unable to find the 2-color one. But, it is intended that the 2-color model is to be used.**
 
@@ -64,15 +64,18 @@ The JST on the display accomodates **8-sockets** as you may know. I have provide
 
 3. After that put the display into Part A by just pressing it in ( the Part has snap-in locks in the bezel space ). Connect the JST (8-pin) of the Display to the 8-pin header on the PCB using **Jumper Wires**.
 
-4. Then screw an **8mm momentary switch** through the hole in the **right side** of **Part B**. Solder the two pins to their resepctive pins on ESP32 (One to **GND** and another one to any **GPIO pin**)
+4. Then screw an **8mm momentary switch** through the hole in the **right side** of **Part B**. Solder the two pins to their resepctive pins on ESP32 using wores (One to **GND** and another one to any free **GPIO pin**).
 
 5. After this connect the **Front Panel** and **Part B** by pressing them into each other cause they have **snap-in locks**.
 
 6. Last step is to connect the ESP32 to a USB Port for Power Supply and your done!!
 
-_Refer the Gallery If you don't understand anything_
-
 **_If you followed all the steps, then congrats!! Your ATTN_unit is ready. Enjoy your fulfilling and focus-filled study sessions!!_**
+
+Note:
+_Do not connect any two wires to the same GPIO as it may shot the board and burn components_
+
+_Refer the Gallery If you don't understand anything_
 
 # Why this Project?
 In a world with thousands of distractions around us, it is hard for students to focus and concentrate on studying. These study sessions are often plain and lack something **fun**. This lack of _fun_ is satisfied by our **ATTN_unit**. It makes studying feel like a game by introducing **Focus Score** and others such elements that **encourage** students to study.
