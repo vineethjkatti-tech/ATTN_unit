@@ -20,13 +20,13 @@ This project has four key elements:
 >It uses an ESP32 so basically in - built memory that stays even after restart. It uses memory data for long term analysis.
 
 **2. Personality:**
->Yes! it has a personality you can influence its personality. For example, if you are distracted a lot of the times it is more stricter on you and if your more focused on the other hand, it is more kind..
+>Yes! it has a personality, and you can slightly influence it too! For example, if you are distracted a lot of the times it is more stricter on you, and if your more focused on the other hand, it is more lenient..
 
 **3. Sensor Reading:**
->It reads data from various sensors on the esp namely - microphone(noise level), motion sensor(for your movment sensation) and also a push button(to start or end session).
+>It reads data from various sensors on the board, namely - **I2S MEMS Mic** (noise level), **HLK-LD2410C** (to sense your movement) and also a **Push Button** (to start or end session).
 
 **4. Reward Logic**
->This the highlight of my project. There is one core factor - **consistency score** which is affected by many factors such as your **focus**, the **noise level** in your environment, your **movment** - how much you fidget around and its **state **_(which is affected by noise level, focus and motion)._
+>This is the highlight of my project. There is one core factor - **consistency score** which is affected by many factors such as your **focus**, the **noise level** in your environment, your **movement** - how much you fidget around and the device's **state**_(which is affected by noise level, focus and motion)._
 
 ## Firmware Logic
 The firmware contains a series of **variables** and custom **functions**. It uses a **Scoring System** as you know. The UI of the display contains an ASCII emoji that changes based on your focus level. So, stay focused and don't dissapoint **EYES**! (the name of the emoji apparently).
