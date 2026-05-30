@@ -3,7 +3,7 @@ A smart desk companion that tracks your focus using sound, motion, and time. It 
 It is a device that helps you focus while studying, working etc. The main purpose of this device is to gameify maintaining focus and helps us achieve concentration.
 
 # Overview
-Fitted with the **Esp32 Dev Board**, **ATTN_unit** uses **I2S MEMS Breakout Board** and **HLK-LD2410** sensors to read the noise levels and movment of the user and gives out the **Focus Score** of the user and also displays corresponding emotions the **2.13 Inch E-Ink Display**. It includes a **2 pin tactile switch** to start or stop a study session.
+Fitted with the **Esp32 Dev Board**, ATTN_unit uses **I2S MEMS Breakout Board** and **HLK-LD2410** sensors to read the noise levels and movment of the user and gives out the **Focus Score** of the user and also displays corresponding emotions on the **2.13 Inch E-Ink Display**. It includes an **8mm momentary switch** to start or stop a study session.
 
 <img width="1920" height="832" alt="ATTN_unit (revised)" src="https://github.com/user-attachments/assets/72a3dec0-157c-4f44-84e3-f15502b3c370" />
 
