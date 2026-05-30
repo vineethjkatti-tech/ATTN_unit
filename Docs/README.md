@@ -37,10 +37,10 @@ The firmware contains a series of **variables** and custom **functions**. It use
 ### Structure
 When we come to the hardware side, ATTN_unit contains two parts:
 1. **Part A:** The Front Panel with the screen bezel and the screen itself.
-2. **Part B:** The main container that holds the PCB and to which the Part A is snapped onto
+2. **Part B:** The main container that holds the PCB and to which the Part A is snapped onto.
 
 **Connection Methods:**
-There are two types of connection methods used in this project
+There are two types of connection methods used in this project:
 1. **Snap-in Locks-**
   - It is used to fit Part A and B together.
   - It is used to fit the display onto its bezel.
@@ -73,9 +73,9 @@ The JST on the display accomodates **8-sockets** as you may know. I have provide
 **_If you followed all the steps, then congrats!! Your ATTN_unit is ready. Enjoy your fulfilling and focus-filled study sessions!!_**
 
 Note:
-_Do not connect any two wires to the same GPIO as it may shot the board and burn components_
+_Do not connect any two wires to the same GPIO as it may shot the board and burn components._
 
-_Refer the Gallery If you don't understand anything_
+_Refer the Gallery If you don't understand anything._
 
 # Why this Project?
 In a world with thousands of distractions around us, it is hard for students to focus and concentrate on studying. These study sessions are often plain and lack something **fun**. This lack of _fun_ is satisfied by our **ATTN_unit**. It makes studying feel like a game by introducing **Focus Score** and others such elements that **encourage** students to study.
