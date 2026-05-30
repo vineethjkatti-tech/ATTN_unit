@@ -52,7 +52,7 @@ There are two types of connection methods used in this project:
 As the **2.13 Inch 2 color E-Ink display** fits easily onto the raspberry pi, you have to keep in mind some things while connecting it to an ESP32.
 The JST on the display accomodates **8-sockets** as you may know. I have provided an **8-pin header** on my PCB which has the same pin designations as the JST on the the display. The JST can be connected to the headers on the PCB using jumper wires. 
 
-**Note: the 3D Model used in the CAD is the 3-color model because I was unable to find the 2-color one. But, it is intended that the 2-color model is to be used.**
+**Note: the 3D Model used in the CAD is the 3-color model because I was unable to find the 2-color one. But, it is intended that the 2-color model should be used.**
 
 
 # Steps to Build ATTN_unit
