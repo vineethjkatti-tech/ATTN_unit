@@ -49,7 +49,7 @@ There are two types of connection methods used in this project
   - They are used to connect the PCB with Part B.
 
 **Display:**
-As the **2.13 Inch 2 color E-Ink display** is native to one of the raspberry pi, I have to keep in mind some things while connecting it to ESP32.
+As the **2.13 Inch 2 color E-Ink display** fits easily onto the raspberry pi, I have to keep in mind some things while connecting it to an ESP32.
 The JST on the display accomodates **8-sockets** as you may know. I have provided an **8-pin header** on my PCB which has the same pin designations as the JST on the the display. The JST can be connected to the header using jumper wires. 
 
 
