@@ -1,0 +1,635 @@
+# ATTN_unit — Journal Export
+
+- Exported at: 2026-06-19T10:40:41Z
+- Project ID: 2838
+- Entries: 20
+
+## Entry 1
+- ID: 5100
+- Author: vivacious_eye
+- Created At: 2026-05-02T11:52:36Z
+
+### Content
+
+**day_1**
+### Editing my README and Getting started with the pcb
+This is my second project.. lessgooo!!
+I first uploaded my code into my repo. **Sadly I didn't record myself coding cause I thought I could use hackatime. So, I lost about 2 hours of work** But, More hours for me anyways.
+I started adding a description in my repo which took me about 13 mins.
+I added info on how it works and what _sensors_ it uses and also what makes my project _different_ from _others'_
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA0MDksInB1ciI6ImJsb2JfaWQifX0=--5dc3aa2438d3c3a36b95036e7408d2daf9485972/image.png)
+
+Next I began designing my _PCB_. 
+I added the footprints of - **MPU6050**, **KY038**, I couldn't find the footprint for ESP32(more on that later) and also I didn't find the exact footprint for the display so I added a _ 4 pin socket for it._
+
+But as I was looking for the footprint of the esp32 I needed I couldn't find it. To be specific I wanted the **ESP - 32 - NodeMCU full dev board. I couldn't find the footprint anywhere so I got stuck there and thought I will continue tomorrow. 
+
+That's it for today byeee!!
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/2d61368c-3acc-424c-96d5-e0c45f2c394b/video.mp4
+- https://lookout.hackclub.com/api/media/af199aeb-5b57-4fe3-802b-230e63593c89/video.mp4
+
+## Entry 2
+- ID: 5243
+- Author: vivacious_eye
+- Created At: 2026-05-03T08:10:59Z
+
+### Content
+
+**day_2**
+### Creating and Refining the PCB design
+As I didn't find the footprint for the _esp_ **anywhere** I thought I'll just add _pin sockets for the esp_ it would be like **19 pins** on each side soo.
+I started by naming the pins one by one. How did I know the pins you ask - I had a board at my home so it was easy for me.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA4NTYsInB1ciI6ImJsb2JfaWQifX0=--980dc15da894de82af019b8b5520f5df22ac8295/image.png)
+_I did a fatal mistake here which cost me a lot of time (more on that later)._
+
+Next, I assigned the footprints for all of the components and I thought it was ready to update now
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA4NTcsInB1ciI6ImJsb2JfaWQifX0=--52b3863a08325eea5ce6f3813529e6205d94fcaf/image.png)
+
+So, when I clicked **update pcb** in the _pcb editor_ it was like - ** Some footprints don't have their pin numbers** in the error list.
+OMG I had to rewrite all pin numbers and it took me like **30 MINSSS!!**. 
+
+Then after all the work again when I clicked Update pcb IT DIDNT DO ANYTHING!!.
+There was nothing I could place......(┬┬﹏┬┬)..
+
+When I checked to see what was wrong I hadn't saved the assigned footprints...
+So, I felt a bit happy and assigned them and saved the footprints ☆*: .｡. o(≧▽≦)o .｡.:*☆
+
+Next was the wiring the most time consuming part of this session =.= 
+As the board I had had different **pin names** so I had to refer a datasheet for wiring:
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA4NjEsInB1ciI6ImJsb2JfaWQifX0=--4b1467d237fcda768fa43aadc2f5e361134a7c4d/image.png)
+Here is the link for it : [Click here](https://documentation.espressif.com/esp32-wroom-32_datasheet_en.pdf)
+
+So, I _carefully wired everything up _pin - by - pin_.
+The finished product looks like this:
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA4NjYsInB1ciI6ImJsb2JfaWQifX0=--24f1e159947827114083eed67783a5ff56893d67/image.png)
+
+So, after that I did some wiring (copper tracks) in the pcb editor and used **Filled Zone** for the **GND**. and at last everything was ready-
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA4NjcsInB1ciI6ImJsb2JfaWQifX0=--617017836a57ee36243945f0a49c1b89ddf65485/image.png)
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTA4NjgsInB1ciI6ImJsb2JfaWQifX0=--587b400f46903e0d6ef2dfab7bf042bdb673c3c3/image.png)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/96d4cd87-3c86-4b7c-b3a7-1383f471e5b7/video.mp4
+
+## Entry 3
+- ID: 5386
+- Author: vivacious_eye
+- Created At: 2026-05-04T06:18:18Z
+
+### Content
+
+**day_3**
+### Creating Footprints and Trying new code
+I tried to make a **cat** for the display today yk like a _mascot_.
+I created a small bitmap using piskel
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTEyMzcsInB1ciI6ImJsb2JfaWQifX0=--e88df8540e9ace879af219887b9ddea8f291a4b2/image.png)
+
+I used a converter to convert _image_ to _bitmap_ and converted it a to an array and pasted it in my code according to the tutorial. 
+But, sadly it didn't work /_ \ . 
+
+So, next i went on to make my own footprint instead of using pin headers cause the reviewers suggested that.
+I had to watch a tutorial to make one and I first started with the **MPU6050**. I started with the dimensions and started making the symbol. As I made it I thought I had to put in through holes. But, no I had to make pins for it in the symbol and the through holes should be in the footprint instead.
+
+it took a lot of time for the footprint mainly cause there was an issue with the **size**. Because I had put the dimensions perfectly but only _7 holes_ fit there. So, I did some surfing on google but didn't find anything so I ended up extending it to fit another hole. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTEyNDEsInB1ciI6ImJsb2JfaWQifX0=--15da30283a957c96e729611e8ab2c9d3b1e193e3/image.png)
+
+After that I had finished with that footprint and symbol yayyy!! ヾ(≧▽≦*)o.
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/87b9b2eb-84aa-4cbb-8f4f-b1e7625c32b6/video.mp4
+- https://lookout.hackclub.com/api/media/4b0d834c-9aee-43af-89bc-08f2327447ed/video.mp4
+
+## Entry 4
+- ID: 5604
+- Author: vivacious_eye
+- Created At: 2026-05-05T16:08:36Z
+
+### Content
+
+**day_4**
+### Finishing the PCB and editing some code
+I wanted to finish designing the pcb today. So, I imported the symbol and footprint of the _version_ of _ESP32_ and started working with it.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTE2ODAsInB1ciI6ImJsb2JfaWQifX0=--7895a8b77494145906f157c63bfca58c8931a144/image.png)
+
+But, I had an issue - I couldn't get the _.pretty_ from _GradCAD_ which is needed for the footprint. Instead I got two files with extensions - _.sym_ and _.mod_. Later when I saw a video on youtube I gtk the _right way_ to add a footprint was to go tp the editor - click on _Add New Library_ and select the _.mod_ file.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTE2ODEsInB1ciI6ImJsb2JfaWQifX0=--25769b508233571a076ccfa6d8134274ff118f26/image.png)
+_the files had these extensions_
+
+After that I got started with making the footprint and symbol of _KY038_. I started by collecting data like - _dimensions_, _pin pitch_ etc. It took me like 10 to 15 minutes to make it and I inserted it into the schematic. Only when I inserted the symbols that I had made, I got to know that the pin directions were all _wrong_. 
+(┬┬﹏┬┬). _Although it took me just 5 mins to change._
+
+After that I imported the OLED footprints and inserted it too!!
+And then at last I assigned all footprints to their respective symbols and hit _update pcb.
+_
+
+
+
+
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/299c536c-a0bb-4f23-9c19-e66efff9155a/video.mp4
+
+## Entry 5
+- ID: 5723
+- Author: vivacious_eye
+- Created At: 2026-05-06T12:07:42Z
+
+### Content
+
+**day_5**
+### Finishing PCB and updating come code
+Today I added all the 3d models to their components in _KICAD_. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIwNjYsInB1ciI6ImJsb2JfaWQifX0=--0e8774f5abe3f38a75efbf4908e5e5392705803e/image.png)
+
+I had some issues with some models tho. When I connected the display to its model, the model simply wouldn't show up on the screen. I thought it was a rendering issue and connected and saved it. Then when I took a look at the PCB model I realized that the model was far too right in the window. Hence I didn't see it. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIwNjcsInB1ciI6ImJsb2JfaWQifX0=--799511de8a8e2232d5d9cc939b057daa71dd560c/image.png)
+So, I _readjusted_ its positions and it was good to go. 
+
+The problem was with the _KY038_ sensor - I couldn't find a 3d model of it anywhere _although I had found one but it was unusable_ (cause it SLDPRT extensions).
+Then at the end I imported it into fusion and again exported as _.step_ an it _worked!!_
+
+I also had to do some wiring and define _edge cuts_ for it. I also added a _filled zone_ for GND.
+At last my PCB was _ready to go_.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIwNzAsInB1ciI6ImJsb2JfaWQifX0=--1df99bdcffd4df9b47e2d8a544bce2e8ec12b797/image.png)
+------------
+
+While I was working I split into a side proj which is adding a new sensor instead _MPU6050_ - HLK-LD2410 which is a _human detecting sensor_. I changed all the wirings and updated the _schematic_.
+-------------
+
+I also had to change code cause I had changed the sensor and I also wanted to add a mascot called - **EYES**. I added new ASCII emojis and **refined** the code _immensly_.
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/e521de73-e182-42c9-bbaf-610a6816398c/video.mp4
+- https://lookout.hackclub.com/api/media/aa1aded9-9e82-4021-a0b9-37b7f6d057a5/video.mp4
+
+## Entry 6
+- ID: 5856
+- Author: vivacious_eye
+- Created At: 2026-05-07T06:52:51Z
+
+### Content
+
+**day_7**
+### Getting Started with the _casing_
+
+I started designing the case today. 
+I first made some edits to the pcb - like shifting the esp a lil to the edge so the **usb port** was _accessible_ and adding **mounting holes** at the _edge_ of the PCB.
+And  I also added the **BUTTON** which I had totally _forgotten_ and then imported the finished pcb into _fusion_ . The finished pcb looks like _this_ -  
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIzMzcsInB1ciI6ImJsb2JfaWQifX0=--fa3eb672f9366a246d2a1c188252f1f643883e10/image.png)
+
+I started by making a _sketch_, a little wider and larger in size than the pcb. Then I thin extruded it and I was getting _somewhere_ I thought. Then I Extruded it to be fully enclosed and I had also made holes for the _screen_, _mic_ to peek out. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTIzMzgsInB1ciI6ImJsb2JfaWQifX0=--79a19a190536d54cfea5d800f773cf529e881796/image.png)
+
+After that I used fillet to **round** all the edges. 
+Till now I have done only this much..
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/05b08e00-3c41-42fe-abb8-21df34a35aa6/video.mp4
+
+## Entry 7
+- ID: 6282
+- Author: vivacious_eye
+- Created At: 2026-05-09T15:57:08Z
+
+### Content
+
+**day_8**
+### Redesigning the Casing
+I deleted the previous design and I tried for a new design idea (_I would say it was successful_). I wanted to use **glass ** as the front cover and **plastic** as the main casing. I started by making the _sketch_ for the case. 
+Then I made a thin (about 2mm thick) object _same _as the size of the casing and **filleted** it on only two ** parallel edges.** I then added glass (window) appearance to it. It looked **awwwsomeee** Then next I added **M2 Inserts** and screwed the **casing** and the **glass panel** together with the _PCB_ sandwiched in the middle. And now I'm planning for M3 screws to mount the PCB cause the holes are too big. 
+At last I had to carve a hole into the glass for the sensor to poke out.****
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTMzNDMsInB1ciI6ImJsb2JfaWQifX0=--b772cbb8a1937c54d7e55221558c1ee6fc36f425/image.png)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/8d57c556-1454-4cfa-ad16-976bab0b4003/video.mp4
+
+## Entry 8
+- ID: 6538
+- Author: vivacious_eye
+- Created At: 2026-05-11T04:56:15Z
+
+### Content
+
+**day_9** 
+### Finishing The Casing (Almost) 
+I was almost gonna finish the casing today but time didn't permit.
+I added M3 Inserts to mount the PCB but the M3 screw head wasn't bigger than the mounting holes on the PCB.  
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQwMjIsInB1ciI6ImJsb2JfaWQifX0=--65b6ed369f0cc731401c19ed4e375dfe77ec45f7/image.png)
+SO, I needed to find a screws with a bigger head. 
+Finally after _15 mins_ of research I finally settled on the **Flat Head* one cause it had the widest head.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQwMjQsInB1ciI6ImJsb2JfaWQifX0=--3e6b72973c3f0530bc3ffa79c35ea05285811aee/image.png)
+
+Next I made a hole on the sides to plug in the **power supply***.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQwMjUsInB1ciI6ImJsb2JfaWQifX0=--997a7a9416741d165cc6d19caa0bba6d8c7c738d/image.png)
+
+After that, I had to make a **stand** for it ryt? So, I tried to move the whole body as one ( I wanted to tilt it at 30 degrees). But, I couldn't. Then I found out that you have to make it as a ** rigid body** and then move it. SO, I did that but still it didn't go as per me. So I thought I'll just make the stand tilted. I used M2 Inserts and Screws to mount the stand. I am going to complete the design tomorrow.
+
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/924893b0-dc5e-476d-a099-5d5260ff2518/video.mp4
+
+## Entry 9
+- ID: 6891
+- Author: vivacious_eye
+- Created At: 2026-05-13T06:20:34Z
+
+### Content
+
+day_9 and 10
+# Finishing the Casing and editing the README
+
+I finished the casing today by putting in the last screws to mount the stand to part. 
+I first put in the screws then designed the other two faces of the stand which took me about an hours or so. Designing it was tricky cause I had to make holes a lil smaller than the insert and also I had to make the on the opposite side so that it didn't conflict with the opposite part.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTUwNjQsInB1ciI6ImJsb2JfaWQifX0=--fb01ed199565fd6b4249385c541ad4cb27e48f4f/image.png)
+_Also after I finished designing the stand I had to shift it a little down cause then the whole thing would rest on it or else it would tip off_
+
+ Next i uploaded everything to my repo and edited the README by adding info about the firmware. I added Assets folder which contained the screenshots of the full assembly and Now I need to upload all the parts as both .step and .stl because my last project got returned for the same reason. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTUwNjUsInB1ciI6ImJsb2JfaWQifX0=--9d5b229d4f3f3ad83757a8d50e7cb1a7df577c29/image.png)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/82413bfb-47ca-44d0-91b2-f4e56dd78871/video.mp4
+- https://lookout.hackclub.com/api/media/9b9e0454-8943-4834-8c16-5ba7ec627b26/video.mp4
+
+## Entry 10
+- ID: 7088
+- Author: vivacious_eye
+- Created At: 2026-05-14T14:53:54Z
+
+### Content
+
+**day_11**
+# Editing README and getting started with the zine page
+
+I started by adding steps to build ATTN_unit in the README. This time I added just screwing and mounting instructions. It was quite shorter than the guide for iplanter. I mentioned which screws are used and also mentioned where the PCB, CAD and program files can be found.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU1MzksInB1ciI6ImJsb2JfaWQifX0=--66927e3a05d9401b51181fb489fb6371e4056d4d/image.png)
+
+Next I started to design the zine page!!  which is my most favorite part of the project. Initially I wanted to use canva, but, as it didn't allow custom page size I shifted to figma which allowed it. But, in both the editors i noticed that the template given was slightly larger than actual A5 paper on which we had to design on. I started by capturing good quality image of my project, cause that is like the life of the zine. So I found out that you can capture life-like images in the Render Workspace. 
+But, as expected.. the workspace crashes and I used the "capture image" tool instead, which also did the job.
+
+Next I started by copying the Image to figma and centering it. then I added heading texts vertically instead of horizontal (cause I was using cosmos for inspiration). which turned out pretty good actually!! I next added the description. I just copy pasted the github desc, cause I had recieved feedback that too much text on zine didn't do justice. At last I added the qr code and also labelled the unit, also did some positioning changes. At last it turned out like this:
+![ATTN_unit-zine (1).jpg](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU1NDMsInB1ciI6ImJsb2JfaWQifX0=--0f074238ede5e8cffd7616b9664b9a154fb6978f/ATTN_unit-zine (1).jpg)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/98ae97d6-2f93-4b52-9023-fafc2d0d3af6/video.mp4
+- https://lookout.hackclub.com/api/media/0794b0a7-ba85-48e4-b886-f6d776edda46/video.mp4
+
+## Entry 11
+- ID: 8002
+- Author: vivacious_eye
+- Created At: 2026-05-19T17:59:19Z
+
+### Content
+
+**day_12**
+# Making Big Changes to the Project (FIRMWARE)
+
+So, I decided that I would change the following in the project:
+1. Changing KY038 with** I2S MEMS MIC Module**
+2. Shifting to **2.13 inch WaveShare e - ink display (2 color)**
+3. Adding **piezo electric single tune buzzer (not in this rec)
+**
+I first started by changing the firmware where I had to change:
+
+The old SSD1306 format to the new e ink display.
+Made big changes to the ui and I had to do major changes in** void functions**
+--- 
+
+I basically changes only the format and all the core code like the 
+
+```
+currentStartTime = currentTime;
+
+if (lastStableFocusTime < 60)
+message = "LockedIn"
+
+```
+So, it was very _productive_ today.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc0ODAsInB1ciI6ImJsb2JfaWQifX0=--9f9f97db178138209cce20846fe2ef0d0dddd9e6/image.png)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/be0bf8e5-0cfb-4ff2-8499-32b5c50bfb5a/video.mp4
+- https://lookout.hackclub.com/api/media/f0c69ca3-7204-42ec-a6d2-8a2b47a48acf/video.mp4
+
+## Entry 12
+- ID: 8174
+- Author: vivacious_eye
+- Created At: 2026-05-20T16:08:00Z
+
+### Content
+
+**day_13**
+# ReDesigning the PCB and Finishing the Code 
+
+First of all, congrats to me!! I finished the **firmware** todayy!! And _also...._
+I **redesigned the pcb** today. It was a lotta.. work like **a lot..**
+I first searched up whether the new components have a **symbol** or not and I found out that only the **mic** had a symbol **not the display. **
+ Things about the display I found out today:
+- The fact that the display has a separate **8-pin JST-XH female connector** and the **20 pins** are just for **mounting**. 
+- It is specifically made for a raspberry pi version and fits onto the pi directly with no other connections. 
+- I need to make some arrangements to connect it _natively _to my esp32 devboard. 
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NjUsInB1ciI6ImJsb2JfaWQifX0=--e9a585365a06ec4ac919e3f51488511cc3d8157a/image.png)
+
+So, it was easy to wire the I2S MIC for me but it was quite difficult to wrap my head around **how to connect the display to ESP.** After a lot of research I figured that 8 pre crimped cable come with the display which I can use to connect it to my board. 
+The plan: 
+- I have to connect the **8 cables to a 8 pin header on the board** with tracks to the respective pins on the ESP
+- It can be mounted on another **20 pin header** on the board.
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NjgsInB1ciI6ImJsb2JfaWQifX0=--db528ae8a4246e2c7393ac624f5c47f17dc0cc01/image.png)
+_The setup will look somewhat like this_
+
+So, I imported the symbols to the workspace and for the 8 pin Header I changed the pin names to match the ones on the display. Then I wired the 8 pin headers just like how I would wire the 8 pre crimped pins on the display.
+
+![Screenshot 2026-05-20 201744.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NzAsInB1ciI6ImJsb2JfaWQifX0=--6c55b82a1acfcca22357e8921814291ba8beb6fb/Screenshot 2026-05-20 201744.png)
+
+Next, in the pcb editor, I connected all the pins to the ESP board and then filled zones for VCC and GND.
+At last the PCB looks like this:
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NzEsInB1ciI6ImJsb2JfaWQifX0=--17b6e7bba4d2003762a00dbc27193c449beb2fe5/image.png)
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTc4NzIsInB1ciI6ImJsb2JfaWQifX0=--2bc070b6dfd26d8a38104efc9c369c9f9e56faba/image.png)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/ae4fdfac-b1aa-44f8-938f-91630f014816/video.mp4
+- https://lookout.hackclub.com/api/media/90dead61-606f-452b-854b-84cd9be3c347/video.mp4
+
+## Entry 13
+- ID: 8685
+- Author: vivacious_eye
+- Created At: 2026-05-23T17:08:09Z
+
+### Content
+
+**day_14**
+# Redesigning (almost) the PCB and starting with the CAD Design (Kinda)
+So, when I first sat to start the designing the encasing I realised that the screen was **too close** to the **Human Presence Sensor**. So, I had to _almost_ redesign the whole pcb. All I wanted to do was **move** the sensor a little left but when I did that all the wires would **detach** and I had to do the wiring again. I have encountered this same problem like **5 times** in this session (_Although I could use the **(D) Drag** option but it didn't allow **DRC mistakes**_). It was a headache but, **anything for fallout!!**
+
+I also had to **re assign** the **HLK** and **ESP32** their 3d models cause earlier I had changed their **file location** sooo at the end of the first sub sesh this is how it looked(PCB, I hadn't started with the encasing yet):
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTkwMzUsInB1ciI6ImJsb2JfaWQifX0=--99403bc96081b9e4b6a34ce6c8148fd89105f171/image.png)
+_I also had to edit the placement of the 8 pin mount for the cable of the display to the upper side cause I realised it was their only when I saw its 3d model hehe. I also had to adjust the spacing so many timesss, but again, anything for fallout!!_
+
+Next, as I wanted to start I figured that the screen was **ill-aligned** (meaning it was not **centered**). So, **agaiiiiinnnn** I opened up KICAD and started to realign it by reducing or increasing either of the horizontal barriers. This time I had a handy trick to move the components with wires!! I used the same **Drag (D)** option but this time I had turned on the option to **ignore DRC mistakes**. Even if I made mistakes it would be **highlighted** and I would manually **fix** it after replacing the component. This really saved a **lot of time** to me!! _pheww... 
+_
+The final thing after this sesh is like this:
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTkwNTMsInB1ciI6ImJsb2JfaWQifX0=--68954a5f6241dda8a628c0a74bf5ef85ae89b04a/image.png)
+
+This time I really started to design. When I had the PCB infrnt of me nothing reaaly **popped into my mind**. I sat there thinking for a couple of minutes. I arrived to the conclusion going **ahead with a similiar casing design to the first encasing**. But, something felt off, like it was really **plain** and **bland**. So, I closed it for the day thinking I will continue tomorrow cause today was very **stressful** for me.
+
+
+
+
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/62170b36-a7fb-4986-bb33-9c4e9a98ece7/video.mp4
+- https://lookout.hackclub.com/api/media/1aa28d79-0cd1-4e60-979d-393728c0b1a6/video.mp4
+
+## Entry 14
+- ID: 8912
+- Author: vivacious_eye
+- Created At: 2026-05-24T16:51:07Z
+
+### Content
+
+**day_14**
+# Starting with CAD and coming up with awesome Design Ideas
+When I saw the initial design, I was very frustrated. Why? Cause it looked very plain, and zero effort. So, deleted the whole thing and remade everything. I started thinking of a display first design. 
+Design Idea:
+I was thinking of only having the display on the front and all the other components would be on the board and sandwiched in-between the display and the rear panel.
+It was a great idea (atleast better than the last one) cause it had a decluterred and proffesional look.
+
+So, I started by making the Bezel for the screen and Made a sketch matching the outermost border of the display. Then extruded it to form a rounded rectangle frame. On the front of the frame there is a 0.5mm thick panel for the display to sit in. The panel has a hole from which the screen is seen. I still have to design snap-in locks for the screen to actually sit there, gonna do it tomorrow. Now, the bezel was ready!!
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk2OTksInB1ciI6ImJsb2JfaWQifX0=--76b4982ffb4d0e39dbcd33c8f55c83f075f0b45d/image.png)
+_I had to redo it sooo manyy times cause my brain was constantly flooding with new better ideas, I probably undoed and redoed like 5 times._
+
+Next, I designed a new PCB board for the new CAD design! I removed the screen entirely from the board cause it would in a separate bezel. The screen and board would connect with a rear pin header on the board itself, more on this later. I changed the positioning of some components like the 8 pin header and now the board looked compact and concise. 
+
+For the connection of the display with board I introduced the pin header (all of them that are on the board) on the backside of the board (I just turned the 3d model upside down for the footprint) so that they could be connect to the display.
+
+Layout:
+/  > display  \
+|                      | > board(facing opp side)
+|                      |
+|                      |                      
+|            pins >_ | 
+|                    _| 
+\                     /
+
+So, the sturcture was somewhat like that ^.
+
+So, after rewiring and making the PCB design I exported it and brought it into fusion to see how it looked. It looked pretty solid.
+![Screenshot 2026-05-24 222001.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk3MDgsInB1ciI6ImJsb2JfaWQifX0=--7ba43d345b457a536d8500afdae24ede46ee9d38/Screenshot 2026-05-24 222001.png)
+
+![Screenshot 2026-05-24 221951.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk3MTAsInB1ciI6ImJsb2JfaWQifX0=--6988692ddd45fdb2dc82d6a82273a1c7b92ee93b/Screenshot 2026-05-24 221951.png)
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/bc0fc094-9343-467f-bcc4-0bd0ff71fc4f/video.mp4
+
+## Entry 15
+- ID: 9168
+- Author: vivacious_eye
+- Created At: 2026-05-25T18:15:11Z
+
+### Content
+
+day_15
+# Fitting the PCB with the Screen in CAD 
+I first made the **snap in locks** for the display to fit into the bezel as I had promised in the previous journal.
+I extruded and set the **taper angle as -30** degrees so it make a **triangle shape**. The Triangle only **protruded outwards for 1mm** so it was a **perfect fit**.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAzMTMsInB1ciI6ImJsb2JfaWQifX0=--debdec1adabf9bd03954cef35945c289cdf090e7/image.png)
+
+Next I wanted to **fit the PCB and the bezel together** somehow, so I started to by first **comparing** the sizes of the PCB and the screen with bezel. The PCB was **way bigger**, but I had a plan to make them fit. I drew a canvas around the border of the PCB and then extruded it out to form a **frame**. I made **standoffs ** for screws at all four corners of the frame. Then I added the screws and inserts with the PCB. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAzMTgsInB1ciI6ImJsb2JfaWQifX0=--e17411ba2db02452344b4a9578665ac2beff458b/image.png)
+
+After that, I made **grills** at the backwards of the PCB for the sensors to work efficiently. It looked kinda good according too me!!
+After this I saw that the human presence sensor was **facing backwards**. I searched if it sent out signals in all directions but to my **surprise** it sent out waves only in a **120 degree front facing area**. This was a problem. I am thinking I could just turn the whole PCB around or bring the HLK somewhere near the bezel.
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/1bd061e0-2320-44f7-ae9a-dfa51e0be90f/video.mp4
+- https://lookout.hackclub.com/api/media/c545f46e-3819-4ee4-9eaa-0f14c062fe28/video.mp4
+
+## Entry 16
+- ID: 9392
+- Author: vivacious_eye
+- Created At: 2026-05-26T15:50:36Z
+
+### Content
+
+**day_16**
+### Finishing (almost) the CAD
+
+I turned the PCB around **180 degree** so that the HLK sensor had more **clearance**. I also had to make some adjustments to the screw holes and positions after turning it around, yk? the _usual_.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjA4NTUsInB1ciI6ImJsb2JfaWQifX0=--659f29edfa3916603ffcb2da259f9834e528ece6/image.png)
+_ as you can see all the components are upfront now._
+
+After that I went on to design the **front panel** for the container, yk to **lock in**? _haha get the joke LOCK I.... nvm.._ This part was **very frustrating**, mainly cause when I was drawing the border, because of the shading, I couldn't see the **markings** properly so I tilted the part slightly to trace it. When I went to the original view it was **soo off the line** (but this is kinda skill issue so my bad). Also another thing was that there were too many things too deal with, like if I wanted to select the display(component) and the bezel(body) together I had to select it using window select manually so I had to **hide** all the things and **unhide** them again. But, the design got finished today, and I felt sooo happy about it.
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjA4NTYsInB1ciI6ImJsb2JfaWQifX0=--16f77f84764ca1ed520c39617f788e1a40cb51b4/image.png)
+
+Next I tried to draw grills so that the sensor would get better data but when I actually made them, they kinda looked **ugly** cause the PCB behind them was green and bland. So, on only the top side where the mic was I decided to draw smaller 1mm grills and it looked better. (I didn't draw any on the bottom part).
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjA4NTcsInB1ciI6ImJsb2JfaWQifX0=--aa41ca02b8f9634cc5bb52b8abbebecfaf11af1d/image.png)
+_ as you can see there are only like two grills on the top and none on the bottom mainly cause it didn't look good_
+
+After that I decided to draw the **snap-in locks** now. I started by drawing the pins first, sketching the small rectangle and then a right angled triangle on it, _my geometry lessons paid off 😳._ After that it looked **rly good honestly**. I didnt think i would be able to pull this off!! Then I decided I will make the holes next time..
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/622a65a8-3a03-4a95-ac88-4d5cd236c97c/video.mp4
+
+## Entry 17
+- ID: 9721
+- Author: vivacious_eye
+- Created At: 2026-05-27T18:16:57Z
+
+### Content
+
+day_17
+### Making Snap-In locks and moving ahead with the Design
+I had to now make the **holes** for the **pins** of the **snap-in locks** I had alr made (sorry if i didnt mention it in the journal b4!). So, I used **Section Analysis** for this. I cut exactly where the pin was **overlapping** with the PCB holder and drew the sketch of the part which was overlapping. then **extruded** which formed the exact **depression** I was looking for. The I used **Pattern** and **Mirror** tool to copy the feature to all the sides. you might ask the pins may differ in location. But, no I had used the same functions for the pins too!!
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjE1NjIsInB1ciI6ImJsb2JfaWQifX0=--feea25232bedc75ddb66c6f8c6fa6a9aa9290b7b/image.png)
+_For the mirror I had to use the midplane tool, I really learned the **most** in this session_
+
+After the pins and holes were made, the **major** **part** was done actually. I still had to put the button in and also make a space for power supply.
+Next I wanted to connect the front panel to the bezel so that it would be more **convenient**. When I combined them, it said they have to have a **clear overlap** for combining. What I did to solve this was make it more **bigger** then I was able to combine it properly. 
+
+Followed by this was the grouping of all things. The pins were **never a part** of the front panel, mainly because it was easier to edit them if any **complications** showed up (_glad none did_). So, I combined the pins with the front panel (Part A). At the end the whole thing looked like this: 
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjE1NjcsInB1ciI6ImJsb2JfaWQifX0=--84fe03f2bd668bae364e2cf592ced686a5578cf0/image.png)
+
+After this I edited the **positioning** of the **8-pin header** near where the button was cause this way, it was easier to plug in the **JST**. This again came with a lot of complications like removing the old wires and drawing new ones but I also learned about a new tool called interactive delete tool, so a **win win!**
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjE1NjksInB1ciI6ImJsb2JfaWQifX0=--4f55182fabdfe269c7d4d1595f0029f4b73fc575/image.png)
+
+Then i edited some of the **README** like updating the **display choice**, updating the **Structure**. Adding new section called **connection method** and things. I didn't have time to update the repo in itself so I ended the sesh after these small changes.
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/c9b0beb7-d7f2-4fa4-9028-e09d1c5c2366/video.mp4
+
+## Entry 18
+- ID: 9864
+- Author: vivacious_eye
+- Created At: 2026-05-28T08:50:13Z
+
+### Content
+
+**day_18**
+# Working with the Color Scheme of my Project and updating my repo.
+
+I still had to put the **switch** and make space for the **power supply**, so I got it done today. I first looked for a nyc s**pherical momentary switch**. I looked for a switch so **longg** - like **15 minutes** cause I thought these switches were too big and stole the spotlight from the real project. I imported like **three switched** to my project before choosing the last one - **8mm momentary switch** which turned out to be perfect!! When I first thought about the placement, I had decided to place it somewhere on the the **front**. But as the button was too big on the front I placed it on the **right panel on the Part B**. I made a hole and fit right through!!
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjE4OTEsInB1ciI6ImJsb2JfaWQifX0=--20fbecdbd1b72244aee23a973b5094d6c1d2534b/image.png)
+_during one of the images was being uploaded, I also made a cut on the left side of the Part B for a Power Supply!_
+
+Next, I wanted to **color** the whole thing so it looked good. I chose a **matte yellow, matte black** color scheme which was very awsomee!! My project was finally done now!! It was looking so good and it didn't seem **low effort or unprofessional**. **It looked like a real product.
+**
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjE4OTMsInB1ciI6ImJsb2JfaWQifX0=--ede955d546f0421fdb926f2f4639b5d74aa7e33b/image.png)
+_ it looked just as majestic as a queen bee!!_
+
+Next was the more easier job - **updating the GitHub Repo.** I first decided to upload all the CAD files. I exported all the parts separately and the assembly as a whole too! One constant problem I was having was whenever I tried to export anything as .step my fusion would **crashhhh!!** It hapenned to me like a 1000 times!! As I was left with no choice, I exported everything as .stl and then used an **online converter** to convert them into .step. 
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjE4OTQsInB1ciI6ImJsb2JfaWQifX0=--7f2cd271e3e773fccc6cdf6d684a08c640a93175/image.png)'
+
+I made my job easier by using github desktop as I could delete and insert new files easily now. 
+
+Next I updated my Assets folder with new photos and deleted the old photos.
+I took images in the **render workspace in fusion and also ray tracing images in KICAD**. All images were soooo goood. ( _Mainly cause I took ss before hehe!_ ).
+I uploaded all the images to the Assets page in my comp and then deleted the assets page in the repo and inserted the assets folder of my comp. 
+
+**All my major work is done so its only 1 -2 journals b4 this proj is over. Im gonna miss designing ATTN_unit (┬┬﹏┬┬)**
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/82cc6752-695b-404c-aea0-a4061648a99b/video.mp4
+- https://lookout.hackclub.com/api/media/8b42050e-a27a-418d-9056-0e0521b2fded/video.mp4
+
+## Entry 19
+- ID: 10071
+- Author: vivacious_eye
+- Created At: 2026-05-29T05:32:53Z
+
+### Content
+
+**day_19**
+# Editing the Zine and Updating the README
+
+I edited the zine first. I wanted to remove replace the previous image with the new one, but I couldn't find it in the assets page. So, I opened up fusion to take another image of it. After I took it as  imported it I saw that it wasn't PNG, It had a grey bg. I gtk that I couldn't capture transp. images in render. So, I just used capture image to take another image and it turned out transparent. I put it in the zine but the color didn't match the "_unit" text. I changed the color of that text to yellow. (fyi ATTN_unit was matte black and matte yellow). After editing everything, it turned out like this:
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjI3MTksInB1ciI6ImJsb2JfaWQifX0=--0ee1c698ef04ebaa2bb39ea0718c57ed114de29b/image.png)
+
+Next I moved on to edit the README. I changed the images inside the README and also updated the component list. I changed the build instructions and added new ones. I also added new sections about the structure and mainly about display, explaining how to connect the display to the PCB inside. 
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/3e1f4897-6b38-4fda-a9f8-5ee7e6615ca6/video.mp4
+
+## Entry 20
+- ID: 13682
+- Author: vivacious_eye
+- Created At: 2026-06-13T09:21:19Z
+
+### Content
+
+**day_21** 
+#Fixing some Issues with the USB Port
+My project was returned at the last review for an issue with the alignment of USB port. It was too inside, it should have been more at the edge of the PCB.
+
+I made changes with the KICAD file, and yes I had to re route the tracks agaiinn!!. After that I also replaced the 3d model in the Assembly (of the PCB).
+
+I had to re align the inserts and the screws with the holes cause I noticed they were a bit off, not sure why cause I hadn't touched the holes.
+
+----------------------
+
+**day_20**
+#Editing the BOM
+
+Today was mostly editing the BOM. Finding links of the product, scouting for the lowest prices and converting them to INR was the highlight of the day.
+
+At last after the BOM was ready I uploaded it to my repo. After this I edited some things in the README.
+
+![image.png](/user-attachments/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MzI0MjAsInB1ciI6ImJsb2JfaWQifX0=--f84e404da9b4a90a01e9d2d8d25893670d8ad1ee/image.png)
+
+The grand total was **22.4** which was kinda high to me.
+
+
+
+### Recording Links
+
+- https://lookout.hackclub.com/api/media/00b53090-f597-443e-8b8e-09b4b2982ca9/video.mp4
+- https://lookout.hackclub.com/api/media/36430a87-65c3-4990-af15-633570b88dba/video.mp4
