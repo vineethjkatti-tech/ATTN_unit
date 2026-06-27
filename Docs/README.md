@@ -93,4 +93,8 @@ In a world with thousands of distractions around us, it is hard for students to 
 **Display to Board Connection:**
 <img width="1280" height="720" alt="ATTN_unit (revised)" src="https://github.com/user-attachments/assets/6f691a1f-06a3-4669-99d4-20506fcd566a" />
 
+**I have used about 5-10 percent Ai for queries and brainstorming in this project.**
+
+made with love by vivacious_eye <3
+
 
