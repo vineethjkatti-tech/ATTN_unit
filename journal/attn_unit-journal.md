@@ -30,8 +30,8 @@ That's it for today byeee!!
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/2d61368c-3acc-424c-96d5-e0c45f2c394b/video.mp4
-- https://lookout.hackclub.com/api/media/af199aeb-5b57-4fe3-802b-230e63593c89/video.mp4
+- [timelapse (34).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2834%29.mp4)
+- [timelapse (35).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2835%29.mp4)
 
 ## Entry 2
 - ID: 5243
@@ -75,7 +75,7 @@ So, after that I did some wiring (copper tracks) in the pcb editor and used **Fi
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/96d4cd87-3c86-4b7c-b3a7-1383f471e5b7/video.mp4
+- [timelapse (36).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2836%29.mp4)
 
 ## Entry 3
 - ID: 5386
@@ -103,8 +103,8 @@ After that I had finished with that footprint and symbol yayyy!! ヾ(≧▽≦*)
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/87b9b2eb-84aa-4cbb-8f4f-b1e7625c32b6/video.mp4
-- https://lookout.hackclub.com/api/media/4b0d834c-9aee-43af-89bc-08f2327447ed/video.mp4
+- [timelapse (37).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2837%29.mp4)
+- [timelapse (38).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2838%29.mp4)
 
 ## Entry 4
 - ID: 5604
@@ -137,7 +137,7 @@ _
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/299c536c-a0bb-4f23-9c19-e66efff9155a/video.mp4
+- [timelapse (39).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2839%29.mp4)
 
 ## Entry 5
 - ID: 5723
@@ -170,8 +170,8 @@ I also had to change code cause I had changed the sensor and I also wanted to ad
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/e521de73-e182-42c9-bbaf-610a6816398c/video.mp4
-- https://lookout.hackclub.com/api/media/aa1aded9-9e82-4021-a0b9-37b7f6d057a5/video.mp4
+- [timelapse (40).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2840%29.mp4)
+- [timelapse (41).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2841%29.mp4)
 
 ## Entry 6
 - ID: 5856
@@ -196,7 +196,7 @@ Till now I have done only this much..
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/05b08e00-3c41-42fe-abb8-21df34a35aa6/video.mp4
+- [timelapse (42).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2842%29.mp4)
 
 ## Entry 7
 - ID: 6282
@@ -215,7 +215,7 @@ At last I had to carve a hole into the glass for the sensor to poke out.****
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/8d57c556-1454-4cfa-ad16-976bab0b4003/video.mp4
+- [timelapse (43).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2843%29.mp4)
 
 ## Entry 8
 - ID: 6538
@@ -243,7 +243,7 @@ After that, I had to make a **stand** for it ryt? So, I tried to move the whole 
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/924893b0-dc5e-476d-a099-5d5260ff2518/video.mp4
+- [timelapse (44).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2844%29.mp4)
 
 ## Entry 9
 - ID: 6891
@@ -266,8 +266,8 @@ _Also after I finished designing the stand I had to shift it a little down cause
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/82413bfb-47ca-44d0-91b2-f4e56dd78871/video.mp4
-- https://lookout.hackclub.com/api/media/9b9e0454-8943-4834-8c16-5ba7ec627b26/video.mp4
+- [timelapse (45).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2845%29.mp4)
+- [timelapse (46).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2846%29.mp4)
 
 ## Entry 10
 - ID: 7088
@@ -291,8 +291,8 @@ Next I started by copying the Image to figma and centering it. then I added head
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/98ae97d6-2f93-4b52-9023-fafc2d0d3af6/video.mp4
-- https://lookout.hackclub.com/api/media/0794b0a7-ba85-48e4-b886-f6d776edda46/video.mp4
+- [timelapse (47).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2847%29.mp4)
+- [timelapse (48).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2848%29.mp4)
 
 ## Entry 11
 - ID: 8002
@@ -330,8 +330,8 @@ So, it was very _productive_ today.
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/be0bf8e5-0cfb-4ff2-8499-32b5c50bfb5a/video.mp4
-- https://lookout.hackclub.com/api/media/f0c69ca3-7204-42ec-a6d2-8a2b47a48acf/video.mp4
+- [timelapse (49).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2849%29.mp4)
+- [timelapse (50).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2850%29.mp4)
 
 ## Entry 12
 - ID: 8174
@@ -373,8 +373,8 @@ At last the PCB looks like this:
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/ae4fdfac-b1aa-44f8-938f-91630f014816/video.mp4
-- https://lookout.hackclub.com/api/media/90dead61-606f-452b-854b-84cd9be3c347/video.mp4
+- [timelapse (51).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2851%29.mp4)
+- [timelapse (52).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2852%29.mp4)
 
 ## Entry 13
 - ID: 8685
@@ -406,8 +406,8 @@ This time I really started to design. When I had the PCB infrnt of me nothing re
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/62170b36-a7fb-4986-bb33-9c4e9a98ece7/video.mp4
-- https://lookout.hackclub.com/api/media/1aa28d79-0cd1-4e60-979d-393728c0b1a6/video.mp4
+- [timelapse (53).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2853%29.mp4)
+- [timelapse (54).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2854%29.mp4)
 
 ## Entry 14
 - ID: 8912
@@ -451,7 +451,7 @@ So, after rewiring and making the PCB design I exported it and brought it into f
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/bc0fc094-9343-467f-bcc4-0bd0ff71fc4f/video.mp4
+- [timelapse (55).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2855%29.mp4)
 
 ## Entry 15
 - ID: 9168
@@ -476,8 +476,8 @@ After this I saw that the human presence sensor was **facing backwards**. I sear
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/1bd061e0-2320-44f7-ae9a-dfa51e0be90f/video.mp4
-- https://lookout.hackclub.com/api/media/c545f46e-3819-4ee4-9eaa-0f14c062fe28/video.mp4
+- [timelapse (56).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2856%29.mp4)
+- [timelapse (57).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2857%29.mp4)
 
 ## Entry 16
 - ID: 9392
@@ -506,7 +506,7 @@ After that I decided to draw the **snap-in locks** now. I started by drawing the
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/622a65a8-3a03-4a95-ac88-4d5cd236c97c/video.mp4
+- [timelapse (58).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2858%29.mp4)
 
 ## Entry 17
 - ID: 9721
@@ -538,7 +538,7 @@ Then i edited some of the **README** like updating the **display choice**, updat
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/c9b0beb7-d7f2-4fa4-9028-e09d1c5c2366/video.mp4
+- [timelapse (59).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2859%29.mp4)
 
 ## Entry 18
 - ID: 9864
@@ -575,8 +575,8 @@ I uploaded all the images to the Assets page in my comp and then deleted the ass
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/82cc6752-695b-404c-aea0-a4061648a99b/video.mp4
-- https://lookout.hackclub.com/api/media/8b42050e-a27a-418d-9056-0e0521b2fded/video.mp4
+- [timelapse (60).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2860%29.mp4)
+- [timelapse (61).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2861%29.mp4)
 
 ## Entry 19
 - ID: 10071
@@ -597,7 +597,7 @@ Next I moved on to edit the README. I changed the images inside the README and a
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/3e1f4897-6b38-4fda-a9f8-5ee7e6615ca6/video.mp4
+- [timelapse (62).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2862%29.mp4)
 
 ## Entry 20
 - ID: 13682
@@ -631,5 +631,5 @@ The grand total was **22.4** which was kinda high to me.
 
 ### Recording Links
 
-- https://lookout.hackclub.com/api/media/00b53090-f597-443e-8b8e-09b4b2982ca9/video.mp4
-- https://lookout.hackclub.com/api/media/36430a87-65c3-4990-af15-633570b88dba/video.mp4
+- [timelapse (63).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2863%29.mp4)
+- [timelapse (64).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2864%29.mp4)
