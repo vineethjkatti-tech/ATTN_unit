@@ -17,6 +17,7 @@ This is my second project.. lessgooo!!
 I first uploaded my code into my repo. **Sadly I didn't record myself coding cause I thought I could use hackatime. So, I lost about 2 hours of work** But, More hours for me anyways.
 I started adding a description in my repo which took me about 13 mins.
 I added info on how it works and what _sensors_ it uses and also what makes my project _different_ from _others'_
+
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110646.png)
 
 Next I began designing my _PCB_. 
@@ -45,9 +46,11 @@ That's it for today byeee!!
 As I didn't find the footprint for the _esp_ **anywhere** I thought I'll just add _pin sockets for the esp_ it would be like **19 pins** on each side soo.
 I started by naming the pins one by one. How did I know the pins you ask - I had a board at my home so it was easy for me.
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110633.png)
+
 _I did a fatal mistake here which cost me a lot of time (more on that later)._
 
 Next, I assigned the footprints for all of the components and I thought it was ready to update now
+
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110622.png)
 
 So, when I clicked **update pcb** in the _pcb editor_ it was like - ** Some footprints don't have their pin numbers** in the error list.
