@@ -676,3 +676,5 @@ The grand total was **22.4** which was kinda high to me.
 
 - [timelapse (63).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2863%29.mp4)
 - [timelapse (64).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2864%29.mp4)
+---
+**Total time recorded: 25h 56m**
