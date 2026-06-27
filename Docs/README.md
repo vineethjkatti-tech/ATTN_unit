@@ -2,6 +2,11 @@
 A smart desk companion that tracks your focus using sound, motion, and time. It gives real-time feedback, builds study streaks, and adapts to your habits to help you stay locked in. Stay focused. It’s watching.
 It is a device that helps you focus while studying, working etc. The main purpose of this device is to gameify maintaining focus and helps us achieve concentration.
 
+# Note
+**THIS PROJECT NEEDS MANUAL REVIEW.** Please review the journal.md and **Reduce Time** if needed.
+
+Click [here](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/attn_unit-journal.md) for the journal.md file!!
+
 # Overview
 Fitted with the **Esp32 Dev Board**, ATTN_unit uses **I2S MEMS Breakout Board** and **HLK-LD2410** sensors to read the noise levels and movment of the user and gives out the **Focus Score** of the user and also displays corresponding emotions on the **2.13 Inch E-Ink Display**. It includes an **8mm momentary switch** to start or stop a study session.
 
