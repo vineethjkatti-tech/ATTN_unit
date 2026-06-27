@@ -29,6 +29,8 @@ That's it for today byeee!!
 
 
 
+*Time recorded: 1h 2m*
+
 ### Recording Links
 
 - [timelapse (34).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2834%29.mp4)
@@ -76,6 +78,8 @@ So, after that I did some wiring (copper tracks) in the pcb editor and used **Fi
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110539.png)
 
 
+*Time recorded: 1h 18m*
+
 ### Recording Links
 
 - [timelapse (36).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2836%29.mp4)
@@ -103,6 +107,8 @@ it took a lot of time for the footprint mainly cause there was an issue with the
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110521.png)
 
 After that I had finished with that footprint and symbol yayyy!! ヾ(≧▽≦*)o.
+
+*Time recorded: 1h 45m*
 
 ### Recording Links
 
@@ -138,6 +144,8 @@ _
 
 
 
+*Time recorded: 1h 14m*
+
 ### Recording Links
 
 - [timelapse (39).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2839%29.mp4)
@@ -171,6 +179,8 @@ While I was working I split into a side proj which is adding a new sensor instea
 
 I also had to change code cause I had changed the sensor and I also wanted to add a mascot called - **EYES**. I added new ASCII emojis and **refined** the code _immensly_.
 
+*Time recorded: 1h 37m*
+
 ### Recording Links
 
 - [timelapse (40).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2840%29.mp4)
@@ -197,6 +207,8 @@ I started by making a _sketch_, a little wider and larger in size than the pcb. 
 After that I used fillet to **round** all the edges. 
 Till now I have done only this much..
 
+*Time recorded: 1h 4m*
+
 ### Recording Links
 
 - [timelapse (42).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2842%29.mp4)
@@ -215,6 +227,8 @@ Then I made a thin (about 2mm thick) object _same _as the size of the casing and
 At last I had to carve a hole into the glass for the sensor to poke out.****
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110344.png)
 
+
+*Time recorded: 52 minutes*
 
 ### Recording Links
 
@@ -244,6 +258,8 @@ After that, I had to make a **stand** for it ryt? So, I tried to move the whole 
 
 
 
+*Time recorded: 1h 2m*
+
 ### Recording Links
 
 - [timelapse (44).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2844%29.mp4)
@@ -266,6 +282,8 @@ _Also after I finished designing the stand I had to shift it a little down cause
  Next i uploaded everything to my repo and edited the README by adding info about the firmware. I added Assets folder which contained the screenshots of the full assembly and Now I need to upload all the parts as both .step and .stl because my last project got returned for the same reason. 
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110250.png)
 
+
+*Time recorded: 1h 16m*
 
 ### Recording Links
 
@@ -291,6 +309,8 @@ But, as expected.. the workspace crashes and I used the "capture image" tool ins
 Next I started by copying the Image to figma and centering it. then I added heading texts vertically instead of horizontal (cause I was using cosmos for inspiration). which turned out pretty good actually!! I next added the description. I just copy pasted the github desc, cause I had recieved feedback that too much text on zine didn't do justice. At last I added the qr code and also labelled the unit, also did some positioning changes. At last it turned out like this:
 ![ATTN_unit-zine (1).jpg](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110226.png)
 
+
+*Time recorded: 2h 19m*
 
 ### Recording Links
 
@@ -330,6 +350,8 @@ message = "LockedIn"
 So, it was very _productive_ today.
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110217.png)
 
+
+*Time recorded: 1h 12m*
 
 ### Recording Links
 
@@ -374,6 +396,8 @@ At last the PCB looks like this:
 ![image.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110106.png)
 
 
+*Time recorded: 1h 17m*
+
 ### Recording Links
 
 - [timelapse (51).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2851%29.mp4)
@@ -406,6 +430,8 @@ This time I really started to design. When I had the PCB infrnt of me nothing re
 
 
 
+
+*Time recorded: 1h 19m*
 
 ### Recording Links
 
@@ -452,6 +478,8 @@ So, after rewiring and making the PCB design I exported it and brought it into f
 ![Screenshot 2026-05-24 221951.png](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/journal-images/Screenshot%202026-06-27%20110009.png)
 
 
+*Time recorded: 1h 16m*
+
 ### Recording Links
 
 - [timelapse (55).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2855%29.mp4)
@@ -476,6 +504,8 @@ After that, I made **grills** at the backwards of the PCB for the sensors to wor
 After this I saw that the human presence sensor was **facing backwards**. I searched if it sent out signals in all directions but to my **surprise** it sent out waves only in a **120 degree front facing area**. This was a problem. I am thinking I could just turn the whole PCB around or bring the HLK somewhere near the bezel.
 
 
+
+*Time recorded: 1h 27m*
 
 ### Recording Links
 
@@ -506,6 +536,8 @@ _ as you can see there are only like two grills on the top and none on the botto
 After that I decided to draw the **snap-in locks** now. I started by drawing the pins first, sketching the small rectangle and then a right angled triangle on it, _my geometry lessons paid off 😳._ After that it looked **rly good honestly**. I didnt think i would be able to pull this off!! Then I decided I will make the holes next time..
 
 
+
+*Time recorded: 1h 4m*
 
 ### Recording Links
 
@@ -538,6 +570,8 @@ After this I edited the **positioning** of the **8-pin header** near where the b
 Then i edited some of the **README** like updating the **display choice**, updating the **Structure**. Adding new section called **connection method** and things. I didn't have time to update the repo in itself so I ended the sesh after these small changes.
 
 
+
+*Time recorded: 1h 4m*
 
 ### Recording Links
 
@@ -576,6 +610,8 @@ I uploaded all the images to the Assets page in my comp and then deleted the ass
 
 
 
+*Time recorded: 1h 29m*
+
 ### Recording Links
 
 - [timelapse (60).mp4](https://github.com/vineethjkatti-tech/ATTN_unit/blob/main/journal/timelapses/timelapse%20%2860%29.mp4)
@@ -597,6 +633,8 @@ I edited the zine first. I wanted to remove replace the previous image with the 
 
 Next I moved on to edit the README. I changed the images inside the README and also updated the component list. I changed the build instructions and added new ones. I also added new sections about the structure and mainly about display, explaining how to connect the display to the PCB inside. 
 
+
+*Time recorded: 1h 6m*
 
 ### Recording Links
 
@@ -631,6 +669,8 @@ At last after the BOM was ready I uploaded it to my repo. After this I edited so
 The grand total was **22.4** which was kinda high to me.
 
 
+
+*Time recorded: 1h 13m*
 
 ### Recording Links
 
